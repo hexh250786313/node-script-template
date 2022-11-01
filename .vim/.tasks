@@ -1,0 +1,12 @@
+[请求恢复]
+command=yarn re-req
+cwd=$(VIM_CWD)
+output=terminal
+pos=exec
+
+[release]
+command=yarn release
+cwd=$(VIM_CWD)
+output=terminal
+pos=exec
+

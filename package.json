@@ -1,0 +1,26 @@
+{
+  "name": "events.report-re-req",
+  "version": "0.0.1",
+  "description": "Script for recovery of the failed events.report requests",
+  "main": "./bin/index.js",
+  "bin": {
+    "events-report-re-req": "./bin/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hexh250786313/events.report-re-req.git"
+  },
+  "scripts": {
+    "re-req": "node ./bin/index.js",
+    "release": "git checkout master -- ./README.md && cp ./build/index.js ./lib && rm -rf ./build"
+  },
+  "keywords": [
+    "events.report"
+  ],
+  "author": "hexh <250786313@qq.com>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/hexh250786313/events.report-re-req/issues"
+  },
+  "homepage": "https://github.com/hexh250786313/events.report-re-req#readme"
+}
