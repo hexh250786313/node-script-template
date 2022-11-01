@@ -1,0 +1,56 @@
+{
+    "name": "events.report-re-req",
+    "version": "0.0.0-development",
+    "description": "Script for recovery of the failed events.report requests",
+    "main": "./bin/index.js",
+    "bin": {
+        "events-report-re-req": "./bin/index.js"
+    },
+    "scripts": {
+        "clean": "rimraf build",
+        "watch": "yarn && yarn clean && node esbuild.js --watch",
+        "build": "yarn && yarn clean && node esbuild.js",
+        "husky-init": "husky install",
+        "prepare": "yarn husky-init",
+        "re-req": "yarn && node ./bin/index.js"
+    },
+    "lint-staged": {
+        "*.{js,jsx,ts,tsx,cjs,mjs}": [
+            "eslint --fix",
+            "prettier --write"
+        ],
+        "*.{json,md,css,less,sass,scss}": [
+            "prettier --write"
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/hexh250786313/events.report-re-req.git"
+    },
+    "keywords": [
+        "events.report"
+    ],
+    "author": "hexh <250786313@qq.com>",
+    "license": "UNLICENSED",
+    "bugs": {
+        "url": "https://github.com/hexh250786313/events.report-re-req/issues"
+    },
+    "homepage": "https://github.com/hexh250786313/events.report-re-req#readme",
+    "dependencies": {},
+    "devDependencies": {
+        "@tsconfig/recommended": "^1.0.1",
+        "@types/node": "^18.11.9",
+        "@types/uuid": "^8.3.4",
+        "@typescript-eslint/eslint-plugin": "^5.42.0",
+        "@typescript-eslint/parser": "^5.42.0",
+        "esbuild": "^0.15.12",
+        "eslint": "^8.26.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "husky": "^8.0.1",
+        "lint-staged": "^13.0.3",
+        "prettier": "^2.7.1",
+        "rimraf": "^3.0.2",
+        "typescript": "^4.8.4"
+    }
+}

@@ -1,0 +1,18 @@
+[watch]
+command=yarn watch
+cwd=$(VIM_CWD)
+output=terminal
+pos=watch
+
+[build]
+command=yarn build
+cwd=$(VIM_CWD)
+output=terminal
+pos=exec
+
+[请求恢复]
+command=yarn re-req
+cwd=$(VIM_CWD)
+output=terminal
+pos=exec
+
