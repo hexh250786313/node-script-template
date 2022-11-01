@@ -104,5 +104,4 @@ dist
 .tern-port
 
 .git
-yarn.lock
 build
